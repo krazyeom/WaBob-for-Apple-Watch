@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE22AE4C1B02C08C007E8404 /* MenuRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22AE4B1B02C08C007E8404 /* MenuRowController.swift */; };
 		CE4E77B21B0234FE000DFE4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E77B11B0234FE000DFE4A /* AppDelegate.swift */; };
 		CE4E77B41B0234FE000DFE4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E77B31B0234FE000DFE4A /* ViewController.swift */; };
 		CE4E77B71B0234FE000DFE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4E77B51B0234FE000DFE4A /* Main.storyboard */; };
 		CE4E77B91B0234FE000DFE4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4E77B81B0234FE000DFE4A /* Images.xcassets */; };
 		CE4E77BC1B0234FE000DFE4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4E77BA1B0234FE000DFE4A /* LaunchScreen.xib */; };
 		CE4E77C81B0234FE000DFE4A /* WabobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E77C71B0234FE000DFE4A /* WabobTests.swift */; };
+		CE4E77DA1B02351D000DFE4A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E77D91B02351D000DFE4A /* InterfaceController.swift */; };
+		CE4E77DC1B02351D000DFE4A /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E77DB1B02351D000DFE4A /* GlanceController.swift */; };
+		CE4E77DE1B02351D000DFE4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4E77DD1B02351D000DFE4A /* Images.xcassets */; };
+		CE4E77E21B02351D000DFE4A /* Wabob WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CE4E77E11B02351D000DFE4A /* Wabob WatchKit App.app */; };
+		CE4E77EA1B02351D000DFE4A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4E77E81B02351D000DFE4A /* Interface.storyboard */; };
+		CE4E77EC1B02351D000DFE4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4E77EB1B02351D000DFE4A /* Images.xcassets */; };
+		CE4E77EF1B02351D000DFE4A /* Wabob WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE4E77D51B02351D000DFE4A /* Wabob WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEBF3BE31B03969E00D7D4C2 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF3BE21B03969E00D7D4C2 /* DetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +32,38 @@
 			remoteGlobalIDString = CE4E77AB1B0234FE000DFE4A;
 			remoteInfo = Wabob;
 		};
+		CE4E77E31B02351D000DFE4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4E77A41B0234FE000DFE4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4E77E01B02351D000DFE4A;
+			remoteInfo = "Wabob WatchKit App";
+		};
+		CE4E77ED1B02351D000DFE4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4E77A41B0234FE000DFE4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4E77D41B02351D000DFE4A;
+			remoteInfo = "Wabob WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE4E77F61B02351D000DFE4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE4E77EF1B02351D000DFE4A /* Wabob WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CE22AE4B1B02C08C007E8404 /* MenuRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRowController.swift; sourceTree = "<group>"; };
 		CE4E77AC1B0234FE000DFE4A /* Wabob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wabob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4E77B01B0234FE000DFE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4E77B11B0234FE000DFE4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +74,18 @@
 		CE4E77C11B0234FE000DFE4A /* WabobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WabobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4E77C61B0234FE000DFE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4E77C71B0234FE000DFE4A /* WabobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WabobTests.swift; sourceTree = "<group>"; };
+		CE4E77D51B02351D000DFE4A /* Wabob WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wabob WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4E77D81B02351D000DFE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4E77D91B02351D000DFE4A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CE4E77DB1B02351D000DFE4A /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		CE4E77DD1B02351D000DFE4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE4E77E11B02351D000DFE4A /* Wabob WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wabob WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4E77E71B02351D000DFE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4E77E91B02351D000DFE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CE4E77EB1B02351D000DFE4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE4E77F71B023997000DFE4A /* Wabob WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Wabob WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		CE4E77F81B0239BC000DFE4A /* Wabob.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Wabob.entitlements; sourceTree = "<group>"; };
+		CEBF3BE21B03969E00D7D4C2 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE4E77D21B02351D000DFE4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +118,8 @@
 			children = (
 				CE4E77AE1B0234FE000DFE4A /* Wabob */,
 				CE4E77C41B0234FE000DFE4A /* WabobTests */,
+				CE4E77D61B02351D000DFE4A /* Wabob WatchKit Extension */,
+				CE4E77E51B02351D000DFE4A /* Wabob WatchKit App */,
 				CE4E77AD1B0234FE000DFE4A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +129,8 @@
 			children = (
 				CE4E77AC1B0234FE000DFE4A /* Wabob.app */,
 				CE4E77C11B0234FE000DFE4A /* WabobTests.xctest */,
+				CE4E77D51B02351D000DFE4A /* Wabob WatchKit Extension.appex */,
+				CE4E77E11B02351D000DFE4A /* Wabob WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +138,7 @@
 		CE4E77AE1B0234FE000DFE4A /* Wabob */ = {
 			isa = PBXGroup;
 			children = (
+				CE4E77F81B0239BC000DFE4A /* Wabob.entitlements */,
 				CE4E77B11B0234FE000DFE4A /* AppDelegate.swift */,
 				CE4E77B31B0234FE000DFE4A /* ViewController.swift */,
 				CE4E77B51B0234FE000DFE4A /* Main.storyboard */,
@@ -112,6 +174,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE4E77D61B02351D000DFE4A /* Wabob WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE4E77F71B023997000DFE4A /* Wabob WatchKit Extension.entitlements */,
+				CE4E77D91B02351D000DFE4A /* InterfaceController.swift */,
+				CEBF3BE21B03969E00D7D4C2 /* DetailInterfaceController.swift */,
+				CE22AE4B1B02C08C007E8404 /* MenuRowController.swift */,
+				CE4E77DB1B02351D000DFE4A /* GlanceController.swift */,
+				CE4E77DD1B02351D000DFE4A /* Images.xcassets */,
+				CE4E77D71B02351D000DFE4A /* Supporting Files */,
+			);
+			path = "Wabob WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CE4E77D71B02351D000DFE4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4E77D81B02351D000DFE4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE4E77E51B02351D000DFE4A /* Wabob WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CE4E77E81B02351D000DFE4A /* Interface.storyboard */,
+				CE4E77EB1B02351D000DFE4A /* Images.xcassets */,
+				CE4E77E61B02351D000DFE4A /* Supporting Files */,
+			);
+			path = "Wabob WatchKit App";
+			sourceTree = "<group>";
+		};
+		CE4E77E61B02351D000DFE4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4E77E71B02351D000DFE4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +224,12 @@
 				CE4E77A81B0234FE000DFE4A /* Sources */,
 				CE4E77A91B0234FE000DFE4A /* Frameworks */,
 				CE4E77AA1B0234FE000DFE4A /* Resources */,
+				CE4E77F61B02351D000DFE4A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE4E77EE1B02351D000DFE4A /* PBXTargetDependency */,
 			);
 			name = Wabob;
 			productName = Wabob;
@@ -150,6 +254,39 @@
 			productReference = CE4E77C11B0234FE000DFE4A /* WabobTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CE4E77D41B02351D000DFE4A /* Wabob WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4E77F31B02351D000DFE4A /* Build configuration list for PBXNativeTarget "Wabob WatchKit Extension" */;
+			buildPhases = (
+				CE4E77D11B02351D000DFE4A /* Sources */,
+				CE4E77D21B02351D000DFE4A /* Frameworks */,
+				CE4E77D31B02351D000DFE4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4E77E41B02351D000DFE4A /* PBXTargetDependency */,
+			);
+			name = "Wabob WatchKit Extension";
+			productName = "Wabob WatchKit Extension";
+			productReference = CE4E77D51B02351D000DFE4A /* Wabob WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		CE4E77E01B02351D000DFE4A /* Wabob WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4E77F01B02351D000DFE4A /* Build configuration list for PBXNativeTarget "Wabob WatchKit App" */;
+			buildPhases = (
+				CE4E77DF1B02351D000DFE4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wabob WatchKit App";
+			productName = "Wabob WatchKit App";
+			productReference = CE4E77E11B02351D000DFE4A /* Wabob WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +298,29 @@
 				TargetAttributes = {
 					CE4E77AB1B0234FE000DFE4A = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9W3BR8D5NN;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CE4E77C01B0234FE000DFE4A = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = CE4E77AB1B0234FE000DFE4A;
+					};
+					CE4E77D41B02351D000DFE4A = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9W3BR8D5NN;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					CE4E77E01B02351D000DFE4A = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9W3BR8D5NN;
 					};
 				};
 			};
@@ -183,6 +339,8 @@
 			targets = (
 				CE4E77AB1B0234FE000DFE4A /* Wabob */,
 				CE4E77C01B0234FE000DFE4A /* WabobTests */,
+				CE4E77D41B02351D000DFE4A /* Wabob WatchKit Extension */,
+				CE4E77E01B02351D000DFE4A /* Wabob WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +360,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4E77D31B02351D000DFE4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4E77E21B02351D000DFE4A /* Wabob WatchKit App.app in Resources */,
+				CE4E77DE1B02351D000DFE4A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4E77DF1B02351D000DFE4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4E77EA1B02351D000DFE4A /* Interface.storyboard in Resources */,
+				CE4E77EC1B02351D000DFE4A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +401,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE4E77D11B02351D000DFE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4E77DA1B02351D000DFE4A /* InterfaceController.swift in Sources */,
+				CE4E77DC1B02351D000DFE4A /* GlanceController.swift in Sources */,
+				CE22AE4C1B02C08C007E8404 /* MenuRowController.swift in Sources */,
+				CEBF3BE31B03969E00D7D4C2 /* DetailInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +419,16 @@
 			isa = PBXTargetDependency;
 			target = CE4E77AB1B0234FE000DFE4A /* Wabob */;
 			targetProxy = CE4E77C21B0234FE000DFE4A /* PBXContainerItemProxy */;
+		};
+		CE4E77E41B02351D000DFE4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4E77E01B02351D000DFE4A /* Wabob WatchKit App */;
+			targetProxy = CE4E77E31B02351D000DFE4A /* PBXContainerItemProxy */;
+		};
+		CE4E77EE1B02351D000DFE4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4E77D41B02351D000DFE4A /* Wabob WatchKit Extension */;
+			targetProxy = CE4E77ED1B02351D000DFE4A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +447,14 @@
 				CE4E77BB1B0234FE000DFE4A /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CE4E77E81B02351D000DFE4A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4E77E91B02351D000DFE4A /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,9 +547,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Wabob/Wabob.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Wabob/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +561,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Wabob/Wabob.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Wabob/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -392,6 +605,76 @@
 			};
 			name = Release;
 		};
+		CE4E77F11B02351D000DFE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Wabob_WatchKit_Extension;
+				INFOPLIST_FILE = "Wabob WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		CE4E77F21B02351D000DFE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = Wabob_WatchKit_Extension;
+				INFOPLIST_FILE = "Wabob WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		CE4E77F41B02351D000DFE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Wabob WatchKit Extension/Wabob WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wabob WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE4E77F51B02351D000DFE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Wabob WatchKit Extension/Wabob WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Wabob WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +694,7 @@
 				CE4E77CD1B0234FE000DFE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4E77CE1B0234FE000DFE4A /* Build configuration list for PBXNativeTarget "WabobTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +703,25 @@
 				CE4E77D01B0234FE000DFE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4E77F01B02351D000DFE4A /* Build configuration list for PBXNativeTarget "Wabob WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4E77F11B02351D000DFE4A /* Debug */,
+				CE4E77F21B02351D000DFE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4E77F31B02351D000DFE4A /* Build configuration list for PBXNativeTarget "Wabob WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4E77F41B02351D000DFE4A /* Debug */,
+				CE4E77F51B02351D000DFE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

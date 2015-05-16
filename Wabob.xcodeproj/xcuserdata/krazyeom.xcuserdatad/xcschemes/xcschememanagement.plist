@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Glance - Wabob WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Wabob WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Wabob.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>CE4E77C01B0234FE000DFE4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE4E77E01B02351D000DFE4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

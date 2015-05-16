@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7703" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Dining Menu-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Dining Menu" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Wabob_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="Kwa-N9-W64">
+                            <items>
+                                <tableRow identifier="MenuRowType" id="OkB-qt-gXO" customClass="MenuRowController" customModule="Wabob_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="qGG-3O-hXC">
+                                        <items>
+                                            <label width="1" height="20" alignment="left" id="Nz2-b0-KkM"/>
+                                            <label width="1" height="20" alignment="left" id="5AR-G5-O7T"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="menutitle" destination="Nz2-b0-KkM" id="peJ-Nl-QgY"/>
+                                        <outlet property="price" destination="5AR-G5-O7T" id="OHw-4Z-bpe"/>
+                                        <segue destination="g06-Gb-39H" kind="push" identifier="detailSegue" id="Tab-l7-4Zg"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Kwa-N9-W64" id="bH9-mo-xzD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="164" y="217"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="maD-bZ-qB8">
+            <objects>
+                <controller id="g06-Gb-39H" customClass="DetailInterfaceController" customModule="Wabob_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" layout="vertical" id="2aF-JS-fMV">
+                            <items>
+                                <imageView width="1" alignment="left" id="kxl-2f-qP5"/>
+                                <label width="1" height="20" alignment="left" id="BER-Rs-TzX"/>
+                                <label width="1" height="20" alignment="left" id="wUG-pc-RBe"/>
+                                <label width="1" height="20" alignment="left" id="nmw-TU-Lfs"/>
+                                <label width="1" height="20" alignment="left" id="gyY-xn-uyz"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="calorie" destination="nmw-TU-Lfs" id="LrK-1m-8te"/>
+                        <outlet property="floor" destination="wUG-pc-RBe" id="wvi-KS-qe1"/>
+                        <outlet property="img" destination="kxl-2f-qP5" id="Tz4-91-024"/>
+                        <outlet property="menuTitle" destination="BER-Rs-TzX" id="v2e-db-8RU"/>
+                        <outlet property="price" destination="gyY-xn-uyz" id="7aN-0V-k5P"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="411" y="217"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="Wabob_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="gv7-I2-MZq"/>
+                        <group alignment="left" id="eew-Gs-W6Y">
+                            <items>
+                                <table alignment="left" id="OAa-fA-F9E">
+                                    <items>
+                                        <tableRow identifier="MenuRowType" id="Qqm-Ol-5qp">
+                                            <group key="rootItem" width="1" alignment="left" layout="vertical" id="tfh-oI-GWO">
+                                                <items>
+                                                    <label width="1" height="20" alignment="left" text="Label" textAlignment="left" id="lAf-KU-h1G"/>
+                                                    <label width="1" height="20" alignment="left" text="Label" textAlignment="left" id="4HN-p5-2ew"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="table" destination="OAa-fA-F9E" id="9Ya-zN-eC9"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="514"/>
+        </scene>
+    </scenes>
+</document>
