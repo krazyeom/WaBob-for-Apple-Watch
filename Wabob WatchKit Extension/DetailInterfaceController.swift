@@ -34,7 +34,7 @@ class DetailInterfaceController: WKInterfaceController {
     super.willActivate()
     
     if menu != nil {
-      var url = NSURL(string: String(format: "%@%@", "http://", menu.objectForKey("image") as! String))!
+      var url = NSURL(string: menu.objectForKey("image") as! String)!
       var request1: NSURLRequest = NSURLRequest(URL: url)
       let queue:NSOperationQueue = NSOperationQueue()
       NSURLConnection.sendAsynchronousRequest(request1, queue: queue, completionHandler:{ (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in

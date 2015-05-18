@@ -298,7 +298,6 @@
 				TargetAttributes = {
 					CE4E77AB1B0234FE000DFE4A = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 9W3BR8D5NN;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -311,7 +310,6 @@
 					};
 					CE4E77D41B02351D000DFE4A = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 9W3BR8D5NN;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -320,7 +318,6 @@
 					};
 					CE4E77E01B02351D000DFE4A = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 9W3BR8D5NN;
 					};
 				};
 			};
