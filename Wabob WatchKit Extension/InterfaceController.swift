@@ -24,7 +24,6 @@ class InterfaceController: WKInterfaceController {
     super.willActivate()
     
     // Configure interface objects here.
-    NSLog("test")
     let url = NSURL(string: "http://pebob.herokuapp.com")
     let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
       var jsonError: NSError?

@@ -22,7 +22,6 @@ class DetailInterfaceController: WKInterfaceController {
   
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
-    println(context)
     if let detailMenu = context as? Dictionary<String, String> {
         menu = detailMenu
     }
